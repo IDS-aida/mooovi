@@ -1,46 +1,95 @@
-@extends('review_site')
+@extends('layout')
 
 @section('content')
-  <div id="main_cnt_wrapper">
+<div class="user_page">
+  <header class="user_page-header">
+    <div class="yjContainer">
+      <a href="">
+         <div class="user_image"><img alt="Fix" src="/images/{{ Auth::user()->avatar }}"></div>
+        <h2>{{ Auth::user()->name }}<span>さんのマイページ</span></h2>
+      </a>
+    </div>
+  </header>
+  <div class="pt1em pb1em" id="contents">  <div id="main_cnt_wrapper">
     <div id="yjContentsBody">
       <div class="yjContainer">
-        <span class="yjGuid"><a id="yjContentsStart" name="yjContentsStart"></a><img alt="ここから本文です" height="1" src="http://i.yimg.jp/yui/jp/tmpl/1.1.0/audionav.gif" width="1"></span>
-        <div id="yjMain">
-          <article class="section">
-            <div class="container">
-              <header class="header header--section">
-                <h2 class="text-middle">
-                  <i class="icon-movie color-gray-light"></i>{{ $product->title }}
-                </h2>
+        <ul class="user_page-contents">
+          <li style="background-image: url('http://image.eiga.k-img.com/images/movie/80704/poster2/200.jpg?1407203842')">
+            <div class="meta">
+              <header>
+                <div class="title">6才のボクが、大人になるまで。</div>
+                <span class="star"><span class="rating-star"><i class="star-actived rate-100"></i></span></span>
               </header>
-              <p style="text-align: center">
-                <img src="{{ $product->image_url }}" alt="{{ $product->title }}">
-              </p>
-              <div style="text-align: right">
-                <a href="">この作品を投稿する</a>
-              </div>
-              <header class="header header--section">
-                <h2 class="text-middle">
-                  <i class="icon-movie color-gray-light"></i>みんなのレビュー
-                </h2>
-              </header>
-              <ul style="padding: 0">
-                <li style="border-bottom: dotted 1px">
-                  <div class="thumbnail__caption">
-                    <h3 class="text-xsmall text-overflow" title="テスト太郎">
-                      </span>テスト太郎<small 2014=""></small>
-                    </h3>
-                    <p class="text-small">
-                      <span class="rating-star"><i class="star-actived rate-[ここに評価を表示]0"></i></span>
-                    </p>
-                    <p>
-                      面白い
-                    </p>
-                  </div>
-                </li>
-              </ul>
+              <div class="user_review">感動した！久々に名作に出会った感じ</div>
             </div>
-          </article>
-        </div>
-        <div id="yjSub">
+          </li>
+          <li style="background-image: url('http://image.eiga.k-img.com/images/movie/80704/poster2/200.jpg?1407203842')">
+            <div class="meta">
+              <header>
+                <div class="title">6才のボクが、大人になるまで。</div>
+                <span class="star"><span class="rating-star"><i class="star-actived rate-100"></i></span></span>
+              </header>
+              <div class="user_review">感動した！久々に名作に出会った感じ</div>
+            </div>
+          </li>
+          <li style="background-image: url('http://image.eiga.k-img.com/images/movie/80704/poster2/200.jpg?1407203842')">
+            <div class="meta">
+              <header>
+                <div class="title">6才のボクが、大人になるまで。</div>
+                <span class="star"><span class="rating-star"><i class="star-actived rate-100"></i></span></span>
+              </header>
+              <div class="user_review">感動した！久々に名作に出会った感じ</div>
+            </div>
+          </li>
+          <li style="background-image: url('http://image.eiga.k-img.com/images/movie/80704/poster2/200.jpg?1407203842')">
+            <div class="meta">
+              <header>
+                <div class="title">6才のボクが、大人になるまで。</div>
+                <span class="star"><span class="rating-star"><i class="star-actived rate-100"></i></span></span>
+              </header>
+              <div class="user_review">感動した！久々に名作に出会った感じ</div>
+            </div>
+          </li>
+          <li style="background-image: url('http://image.eiga.k-img.com/images/movie/80704/poster2/200.jpg?1407203842')">
+            <div class="meta">
+              <header>
+                <div class="title">6才のボクが、大人になるまで。</div>
+                <span class="star"><span class="rating-star"><i class="star-actived rate-100"></i></span></span>
+              </header>
+              <div class="user_review">感動した！久々に名作に出会った感じ</div>
+            </div>
+          </li>
+          <li style="background-image: url('http://image.eiga.k-img.com/images/movie/80704/poster2/200.jpg?1407203842')">
+            <div class="meta">
+              <header>
+                <div class="title">6才のボクが、大人になるまで。</div>
+                <span class="star"><span class="rating-star"><i class="star-actived rate-100"></i></span></span>
+              </header>
+              <div class="user_review">感動した！久々に名作に出会った感じ</div>
+            </div>
+          </li>
+          <li style="background-image: url('http://image.eiga.k-img.com/images/movie/80704/poster2/200.jpg?1407203842')">
+            <div class="meta">
+              <header>
+                <div class="title">6才のボクが、大人になるまで。</div>
+                <span class="star"><span class="rating-star"><i class="star-actived rate-100"></i></span></span>
+              </header>
+              <div class="user_review">感動した！久々に名作に出会った感じ</div>
+            </div>
+          </li>
+          <li style="background-image: url('http://image.eiga.k-img.com/images/movie/80704/poster2/200.jpg?1407203842')">
+            <div class="meta">
+              <header>
+                <div class="title">6才のボクが、大人になるまで。</div>
+                <span class="star"><span class="rating-star"><i class="star-actived rate-100"></i></span></span>
+              </header>
+              <div class="user_review">感動した！久々に名作に出会った感じ</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+     </div>
+    </div>
+  </div>
+</div>
 @endsection
